@@ -25,8 +25,8 @@
     /* Navbar */
     .navbar {
       background: linear-gradient(90deg, var(--primary) 0%, #2a4365 100%) !important;
-      padding: 1rem 5rem;
-      font-size: 1.3rem;
+      padding: 1rem 3rem;
+      font-size: 1.2rem;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     }
     .navbar .navbar-brand, .navbar-nav .nav-link {
