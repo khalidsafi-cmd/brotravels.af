@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Travel Afghanistan with Bro</title>
+  <meta name="description" content="Bold, authentic tours across Afghanistan. Choose your Bro Level: Easy, Classic, or Giga Chad Expedition." />
+
+  <!-- Bootstrap CSS (CDN) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/images/favicon.png" type="image/png">
+
+</head>
+<body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="80" tabindex="0">
+
+  <!-- Preloader -->
+  <div id="preloader" class="d-flex flex-column align-items-center justify-content-center">
+    <div class="spinner-border text-warning" role="status" aria-label="Loading"></div>
+    <p class="mt-3 text-muted"><span class="text-accent fw-bold">brotravels.af</span> is loading the adventure…</p>
+  </div>
+
+  <!-- Navbar -->
+  <nav id="mainNav" class="navbar navbar-expand-lg navbar-dark bg-dark bg-opacity-75 sticky-top border-bottom border-secondary">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#intro" aria-label="brotravels.af — home">
+        <img src="assets/images/favicon.svg" alt="brotravels.af logo" height="32" style="filter: invert(1);">
+        <span class="fw-bold">BRO<span class="text-warning">TRAVELS</span>.AF</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div id="navMenu" class="collapse navbar-collapse justify-content-lg-center">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="#intro">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#packages">Tour Packages</a></li>
+          <li class="nav-item"><a class="nav-link" href="#recommendations">Recommendations</a></li>
+          <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+          <li class="nav-item ms-lg-2"><a class="btn btn-accent btn-sm" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Intro / Hero -->
+  <section id="intro" class="py-5 py-lg-6">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-7">
+          <h1 class="display-5 fw-bold">Travel Afghanistan with <span class="underline text-warning">Bro-level</span> confidence.</h1>
+          <p class="lead text-muted mt-3">
+            Authentic routes, expert local guides, and the boldest itineraries on the Silk Road.
+            Pick your <strong class="text-warning">Bro Level</strong>: Easy, Classic, or <strong class="text-warning">Giga Chad Expedition</strong>.
+          </p>
+          <div class="d-flex gap-2 flex-wrap mt-3">
+            <a class="btn btn-accent bro-pulse" href="#packages"><i class="bi bi-map"></i> Browse Packages</a>
+            <a class="btn btn-outline-light" href="#about"><i class="bi bi-shield-check"></i> Why Us</a>
+          </div>
+          <ul class="list-inline text-secondary mt-3">
+            <li class="list-inline-item"><i class="bi bi-check2-circle text-accent"></i> Safety-first plans</li>
+            <li class="list-inline-item"><i class="bi bi-check2-circle text-accent"></i> Permits handled</li>
+            <li class="list-inline-item"><i class="bi bi-check2-circle text-accent"></i> Culture-forward</li>
+          </ul>
+        </div>
+        <div class="col-lg-5 text-lg-end">
+          <img src="assets/images/kabul-img.webp" alt="Afghanistan mountain landscape" class="hero-img">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-5 bg-faint">
+    <div class="container">
+      <div class="text-center mb-4">
+        <h2 class="fw-bold">About <span class="text-accent">brotravels.af</span></h2>
+        <p class="text-muted">Meme-energy on the surface, meticulous planning underneath.</p>
+      </div>
+
+      <div class="row g-3">
+        <div class="col-md-4">
+          <div class="card h-100 bg-card border-secondary-subtle">
+            <div class="card-body text-center">
+              <div class="img-placeholder mb-3">
+                <i class="bi bi-people-fill display-4 text-warning"></i>
+              </div>
+              <h3 class="h5"><i class="bi bi-people"></i> Authentic & Respectful</h3>
+              <p class="mb-0 text-muted">Local guides, tea with villagers, real stories—never "poverty tourism". We respect customs and communities.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 bg-card border-secondary-subtle">
+            <div class="card-body text-center">
+              <div class="img-placeholder mb-3">
+                <i class="bi bi-shield-check display-4 text-warning"></i>
+              </div>
+              <h3 class="h5"><i class="bi bi-shield-lock"></i> Safety-First</h3>
+              <p class="mb-0 text-muted">Dynamic risk checks, vetted drivers, realistic timelines, and clear briefings. Safety is baseline, not a feature.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 bg-card border-secondary-subtle">
+            <div class="card-body text-center">
+              <div class="img-placeholder mb-3">
+                <i class="bi bi-passport display-4 text-warning"></i>
+              </div>
+              <h3 class="h5"><i class="bi bi-files-alt"></i> Paperwork? Done.</h3>
+              <p class="mb-0 text-muted">Visas, permits, museum passes, and security notes. We handle the maze so you enjoy the mountains.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <ul class="stats list-inline text-center mt-4 mb-0">
+        <li class="list-inline-item"><span>7+</span> regions covered</li>
+        <li class="list-inline-item"><span>1,200+</span> guided days</li>
+        <li class="list-inline-item"><span>4.9★</span> avg. feedback</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Packages -->
+  <section id="packages" class="py-5">
+    <div class="container">
+      <div class="text-center mb-4">
+        <h2 class="fw-bold">Tour Packages by <span class="text-accent">Bro Level</span></h2>
+        <p class="text-muted">All tours include accommodation, transport, guide, and cultural briefings.</p>
+      </div>
+
+      <!-- Filters -->
+      <div class="d-flex flex-wrap gap-2 justify-content-center mb-3">
+        <button class="btn btn-outline-light btn-sm filter-btn active" data-filter="all">All</button>
+        <button class="btn btn-outline-light btn-sm filter-btn" data-filter="easy">Bro Level — Easy</button>
+        <button class="btn btn-outline-light btn-sm filter-btn" data-filter="classic">Bro Level — Classic</button>
+        <button class="btn btn-outline-light btn-sm filter-btn" data-filter="giga">Giga Chad</button>
+      </div>
+
+      <div class="row g-3" id="packagesGrid">
+        <!-- Easy -->
+        <div class="col-md-6 col-lg-4 package" data-difficulty="easy">
+          <div class="card h-100 bg-card border-secondary-subtle">
+            <img src="assets/images/bamyan-img.webp" alt="Bamiyan Valley" class="package-img">
+            <div class="card-body d-flex flex-column">
+              <div class="d-flex justify-content-between align-items-start">
+                <span class="badge text-bg-primary border border-primary-subtle">Bro Easy</span>
+                <h3 class="h5 mb-0">Kabul &amp; Bamiyan (Fly)</h3>
+              </div>
+              <p class="text-muted mt-2">City highlights, Hazara heartland, Buddha niches, and <em>Band-e Amir</em> lakes by air for comfort.</p>
+              <ul class="small mb-3">
+                <li>5 days • Light hiking</li>
+                <li>Private driver + local guide</li>
+                <li>Tea ceremonies &amp; bazaar walk</li>
+              </ul>
+              <div class="mt-auto d-flex justify-content-between align-items-center">
+                <div class="fw-bold fs-5">$899</div>
+                <a href="#contact" class="btn btn-accent btn-sm book-btn" data-package="Kabul & Bamiyan (Fly)">Book</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 package" data-difficulty="easy">
+          <div class="card h-100 bg-card border-secondary-subtle">
+            <img src="assets/images/herat-img.webp" alt="Herat architecture" class="package-img">
+            <div class="card-body d-flex flex-column">
+              <div class="d-flex justify-content-between align-items-start">
+                <span class="badge text-bg-primary border border-primary-subtle">Bro Easy</span>
+                <h3 class="h5 mb-0">Herat Heritage</h3>
+              </div>
+              <p class="text-muted mt-2">Timurid minarets, ancient citadel, and saffron tasting—photography heaven, minimal transfers.</p>
+              <ul class="small mb-3">
+                <li>4 days • City-based</li>
+                <li>Mosques &amp; tile workshops</li>
+                <li>Sunset at the Citadel</li>
+              </ul>
+              <div class="mt-auto d-flex justify-content-between align-items-center">
+                <div class="fw-bold fs-5">$780</div>
+                <a href="#contact" class="btn btn-accent btn-sm book-btn" data-package="Herat Heritage">Book</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Classic -->
+        <div class="col-md-6 col-lg-4 package" data-difficulty="classic">
+          <div class="card h-100 bg-card border-secondary-subtle">
+            <img src="assets/images/mazar-sharif-img.webp" alt="Mazar-i-Sharif" class="package-img">
+            <div class="card-body d-flex flex-column">
+              <div class="d-flex justify-content-between align-items-start">
+                <span class="badge text-bg-primary border border-primary-subtle">Bro Classic</span>
+                <h3 class="h5 mb-0">Kabul • Bamiyan • Mazar</h3>
+              </div>
+              <p class="text-muted mt-2">The classic triangle: archaeology, shrines, blue tiles, and road scenery that hits different.</p>
+              <ul class="small mb-3">
+                <li>8 days • Mixed travel</li>
+                <li>Road + air transfers</li>
+                <li>Carpet cooperatives &amp; pottery</li>
+              </ul>
+              <div class="mt-auto d-flex justify-content-between align-items-center">
+                <div class="fw-bold fs-5">$1,499</div>
+                <a href="#contact" class="btn btn-accent btn-sm book-btn" data-package="Kabul • Bamiyan • Mazar">Book</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 package" data-difficulty="classic">
+          <div class="card h-100 bg-card border-secondary-subtle">
+            <img src="assets/images/silkroad-img.webp" alt="Silk Road desert" class="package-img">
+            <div class="card-body d-flex flex-column">
+              <div class="d-flex justify-content-between align-items-start">
+                <span class="badge text-bg-primary border border-primary-subtle">Bro Classic</span>
+                <h3 class="h5 mb-0">Silk Road West</h3>
+              </div>
+              <p class="text-muted mt-2">Herat &amp; Farah corridor—caravans, citadels, and desert ribbons. Culture-rich, moderately rugged.</p>
+              <ul class="small mb-3">
+                <li>7 days • Road heavy</li>
+                <li>Car-based exploration</li>
+                <li>Local music evening</li>
+              </ul>
+              <div class="mt-auto d-flex justify-content-between align-items-center">
+                <div class="fw-bold fs-5">$1,350</div>
+                <a href="#contact" class="btn btn-accent btn-sm book-btn" data-package="Silk Road West">Book</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Giga -->
+        <div class="col-md-6 col-lg-4 package" data-difficulty="giga">
+          <div class="card h-100 bg-card border-secondary-subtle">
+            <img src="https://images.unsplash.com/photo-1601579530348-4eb46aa6e31d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Wakhan Corridor" class="package-img">
+            <div class="card-body d-flex flex-column">
+              <div class="d-flex justify-content-between align-items-start">
+                <span class="badge text-bg-primary border border-primary-subtle">Giga Chad</span>
+                <h3 class="h5 mb-0">Wakhan Corridor Trek</h3>
+              </div>
+              <p class="text-muted mt-2">High-altitude valleys, Pamir yak trails, and starfields. Expedition-style &amp; rewarding.</p>
+              <ul class="small mb-3">
+                <li>12 days • Trekking</li>
+                <li>Pack animals &amp; camps</li>
+                <li>Altitude acclimatization</li>
+              </ul>
+              <div class="mt-auto d-flex justify-content-between align-items-center">
+                <div class="fw-bold fs-5">$3,499</div>
+                <a href="#contact" class="btn btn-accent btn-sm book-btn" data-package="Wakhan Corridor Trek">Book</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 package" data-difficulty="giga">
+          <div class="card h-100 bg-card border-secondary-subtle">
+            <img src="https://images.unsplash.com/photo-1581434681384-9d00cb4f95ed?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Hindu Kush mountains" class="package-img">
+            <div class="card-body d-flex flex-column">
+              <div class="d-flex justify-content-between align-items-start">
+                <span class="badge text-bg-primary border border-primary-subtle">Giga Chad</span>
+                <h3 class="h5 mb-0">Hindu Kush Overland</h3>
+              </div>
+              <p class="text-muted mt-2">Switchbacks, high passes, and remote hamlets—pure overland bliss for the seasoned traveler.</p>
+              <ul class="small mb-3">
+                <li>10 days • Off-road</li>
+                <li>4x4 convoy + fixers</li>
+                <li>Sunrise ridge hike</li>
+              </ul>
+              <div class="mt-auto d-flex justify-content-between align-items-center">
+                <div class="fw-bold fs-5">$2,950</div>
+                <a href="#contact" class="btn btn-accent btn-sm book-btn" data-package="Hindu Kush Overland">Book</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /row -->
+    </div>
+  </section>
+
+  <!-- Recommendations -->
+  <section id="recommendations" class="py-5 bg-faint">
+    <div class="container">
+      <div class="text-center mb-4">
+        <h2 class="fw-bold">Where Bros Should <span class="text-accent">Absolutely Go</span></h2>
+        <p class="text-muted">Huge payoff for photography, culture, and bragging rights.</p>
+      </div>
+
+      <div class="row g-3">
+        <div class="col-md-4">
+          <div class="card h-100 bg-card border-secondary-subtle">
+            <img src="https://images.unsplash.com/photo-1590065480004-5c2dfa1406ff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Band-e Amir lakes" class="recommendation-img">
+            <div class="card-body">
+              <h3 class="h5">Band-e Amir</h3>
+              <p class="text-muted">Turquoise lakes in travertine bowls. Gentle hikes and picnics with unreal reflections.</p>
+              <button class="btn btn-outline-light btn-sm more-btn" data-target="#place1">Show details</button>
+              <div id="place1" class="collapse mt-2">
+                <ul class="small text-secondary mb-0">
+                  <li>Best season: May–Sep</li>
+                  <li>Activity: light hiking, boating</li>
+                  <li>Pairs with: Bamiyan Buddhas &amp; Shahr-e Gholghola</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 bg-card border-secondary-subtle">
+            <img src="https://images.unsplash.com/photo-1588416498210-02e19971e5ca?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Blue Mosque" class="recommendation-img">
+            <div class="card-body">
+              <h3 class="h5">Blue Mosque (Mazar)</h3>
+              <p class="text-muted">Complex tilework and doves in flight. Dawn light + calligraphy close-ups.</p>
+              <button class="btn btn-outline-light btn-sm more-btn" data-target="#place2">Show details</button>
+              <div id="place2" class="collapse mt-2">
+                <ul class="small text-secondary mb-0">
+                  <li>Best season: All year</li>
+                  <li>Respect: dress modestly, follow prayer etiquette</li>
+                  <li>Pairs with: Bazaar &amp; carpet cooperatives</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 bg-card border-secondary-subtle">
+            <img src="https://images.unsplash.com/photo-1601579530348-4eb46aa6e31d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Wakhan Mountains" class="recommendation-img">
+            <div class="card-body">
+              <h3 class="h5">Wakhan Mountains</h3>
+              <p class="text-muted">Where the Pamir meets the sky. Kyrgyz camps, yak bells, and impossible night skies.</p>
+              <button class="btn btn-outline-light btn-sm more-btn" data-target="#place3">Show details</button>
+              <div id="place3" class="collapse mt-2">
+                <ul class="small text-secondary mb-0">
+                  <li>Best season: Jul–Sep</li>
+                  <li>Fitness: medium to high</li>
+                  <li>Pairs with: Ishkashim hot springs</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><!-- /row -->
+    </div>
+  </section>
+
+  <!-- Car Fleet Section -->
+<section id="fleet" class="py-5">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="fw-bold">Our <span class="text-accent">Bro-Mobile</span> Fleet</h2>
+      <p class="text-muted">Right rides for every terrain. No compromises, no breakdowns, just pure adventure.</p>
+    </div>
+
+    <div class="row g-4">
+      <!-- City & Road Cars -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 bg-card border-secondary-subtle">
+          <div class="card-img-container" style="height: 200px; overflow: hidden;">
+            <img src="https://images.unsplash.com/photo-1603712610496-72e9fbf05b15?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" 
+                 alt="Toyota Corolla for city roads" class="card-img-top h-100 object-fit-cover">
+          </div>
+          <div class="card-body d-flex flex-column">
+            <div class="d-flex justify-content-between align-items-start mb-2">
+              <span class="badge bg-success">City & Highway</span>
+              <h3 class="h5 mb-0">Toyota Corolla</h3>
+            </div>
+            <p class="text-muted">Smooth rides for city tours and highway cruises. Fuel-efficient and comfortable for those long road trips.</p>
+            <ul class="small mb-3">
+              <li><i class="bi bi-speedometer2"></i> Perfect for paved roads</li>
+              <li><i class="bi bi-people"></i> Comfort for 4 passengers</li>
+              <li><i class="bi bi-fuel-pump"></i> Excellent fuel economy</li>
+            </ul>
+            <div class="mt-auto">
+              <button class="btn btn-outline-light btn-sm w-100 fleet-btn" data-bs-toggle="modal" data-bs-target="#fleetModal" data-vehicle="Toyota Corolla">View Details</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Light Off-Road -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 bg-card border-secondary-subtle">
+          <div class="card-img-container" style="height: 200px; overflow: hidden;">
+            <img src="https://images.unsplash.com/photo-1621330396173-e41b1cafd17f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" 
+                 alt="Toyota 4Runner for light off-road" class="card-img-top h-100 object-fit-cover">
+          </div>
+          <div class="card-body d-flex flex-column">
+            <div class="d-flex justify-content-between align-items-start mb-2">
+              <span class="badge bg-warning text-dark">Light Off-Road</span>
+              <h3 class="h5 mb-0">Toyota 4Runner</h3>
+            </div>
+            <p class="text-muted">Tackle rough trails and mountain passes with confidence. The perfect balance of comfort and capability.</p>
+            <ul class="small mb-3">
+              <li><i class="bi bi-signpost-split"></i> Gravel roads & light trails</li>
+              <li><i class="bi bi-people"></i> Spacious for 5 + gear</li>
+              <li><i class="bi bi-shield-check"></i> 4WD capability</li>
+            </ul>
+            <div class="mt-auto">
+              <button class="btn btn-outline-light btn-sm w-100 fleet-btn" data-bs-toggle="modal" data-bs-target="#fleetModal" data-vehicle="Toyota 4Runner">View Details</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Heavy Off-Road -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 bg-card border-secondary-subtle">
+          <div class="card-img-container" style="height: 200px; overflow: hidden;">
+            <img src="https://images.unsplash.com/photo-1580273917197-9c6d70d6ae7a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" 
+                 alt="Toyota Land Cruiser for heavy off-road" class="card-img-top h-100 object-fit-cover">
+          </div>
+          <div class="card-body d-flex flex-column">
+            <div class="d-flex justify-content-between align-items-start mb-2">
+              <span class="badge bg-danger">Extreme Terrain</span>
+              <h3 class="h5 mb-0">Toyota Land Cruiser</h3>
+            </div>
+            <p class="text-muted">Conquer the toughest terrains Afghanistan has to offer. Built for Giga Chad-level expeditions.</p>
+            <ul class="small mb-3">
+              <li><i class="bi bi-geo-alt"></i> Mountainous & desert terrain</li>
+              <li><i class="bi bi-people"></i> 7-passenger capacity</li>
+              <li><i class="bi bi-trophy"></i> Ultimate off-road performance</li>
+            </ul>
+            <div class="mt-auto">
+              <button class="btn btn-outline-light btn-sm w-100 fleet-btn" data-bs-toggle="modal" data-bs-target="#fleetModal" data-vehicle="Toyota Land Cruiser">View Details</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center mt-5">
+      <p class="text-muted">Not sure which vehicle is right for your adventure? <a href="#contact" class="text-accent">Contact us</a> and we'll match you with the perfect ride.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Fleet Modal -->
+<div class="modal fade" id="fleetModal" tabindex="-1" aria-labelledby="fleetModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content bg-dark text-light">
+      <div class="modal-header border-secondary">
+        <h5 class="modal-title" id="fleetModalLabel">Vehicle Details</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-md-6">
+            <img id="modalVehicleImage" src="" class="img-fluid rounded" alt="Vehicle image">
+          </div>
+          <div class="col-md-6">
+            <h4 id="modalVehicleName"></h4>
+            <span id="modalVehicleBadge" class="badge mb-3"></span>
+            <p id="modalVehicleDescription" class="text-muted"></p>
+            <h5>Specifications</h5>
+            <ul id="modalVehicleSpecs" class="list-unstyled">
+            </ul>
+            <div class="mt-3">
+              <h5>Perfect For:</h5>
+              <p id="modalVehiclePerfectFor" class="text-accent"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer border-secondary">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <a href="#contact" class="btn btn-accent">Book This Vehicle</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- FAQ -->
+  <section id="faq" class="py-5">
+    <div class="container">
+      <div class="text-center mb-4">
+        <h2 class="fw-bold">FAQ</h2>
+        <p class="text-muted">If your question isn't here, ask us directly.</p>
+      </div>
+
+      <div class="accordion" id="faqAcc">
+        <div class="accordion-item bg-card border-secondary-subtle">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+              Is it safe to travel in Afghanistan with you?
+            </button>
+          </h2>
+          <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAcc">
+            <div class="accordion-body text-muted">
+              We plan conservatively: dynamic route checks, vetted drivers, realistic itineraries, and briefings. We run trips that meet our thresholds and adjust plans if needed.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item bg-card border-secondary-subtle">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+              Do you handle visas and permits?
+            </button>
+          </h2>
+        <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAcc">
+          <div class="accordion-body text-muted">
+            Yes—invitation letters, regional permits, museum passes, and fixers where appropriate. We provide a prep pack with checklists before you fly.
+          </div>
+        </div>
+        </div>
+
+        <div class="accordion-item bg-card border-secondary-subtle">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+              Can women join your tours?
+            </button>
+          </h2>
+          <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAcc">
+            <div class="accordion-body text-muted">
+              Absolutely. We brief on dress norms and respectful conduct, and align each itinerary with current guidance. Many women have traveled with us comfortably.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item bg-card border-secondary-subtle">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+              How do I pay?
+            </button>
+          </h2>
+          <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAcc">
+            <div class="accordion-body text-muted">
+              Bank transfer and major cards (via secure link). Deposits confirm your spot; balance due before arrival unless otherwise arranged.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-5 bg-faint">
+    <div class="container">
+      <div class="text-center mb-4">
+        <h2 class="fw-bold">Contact Us</h2>
+        <p class="text-muted">Tell us your dates, fitness level, and vibe. We'll tailor a plan that fits your Bro Level.</p>
+      </div>
+
+      <form id="contactForm" class="needs-validation" novalidate>
+        <div class="row g-3">
+          <div class="col-md-6">
+            <label for="name" class="form-label">Name</label>
+            <input id="name" name="name" type="text" class="form-control" required placeholder="Your full name">
+            <div class="invalid-feedback">Please enter your name.</div>
+          </div>
+
+          <div class="col-md-6">
+            <label for="email" class="form-label">Email</label>
+            <input id="email" name="email" type="email" class="form-control" required placeholder="you@domain.com">
+            <div class="invalid-feedback">Enter a valid email.</div>
+          </div>
+
+          <div class="col-md-6">
+            <label for="phone" class="form-label">Phone (optional)</label>
+            <input id="phone" name="phone" type="tel" class="form-control" placeholder="+93 ...">
+          </div>
+
+          <div class="col-md-6">
+            <label for="pkg" class="form-label">Interested Package</label>
+            <select id="pkg" name="package" class="form-select">
+              <option value="">Select a package</option>
+              <option>Kabul &amp; Bamiyan (Fly) — $899</option>
+              <option>Herat Heritage — $780</option>
+              <option>Kabul • Bamiyan • Mazar — $1,499</option>
+              <option>Silk Road West — $1,350</option>
+              <option>Wakhan Corridor Trek — $3,499</option>
+              <option>Hindu Kush Overland — $2,950</option>
+            </select>
+          </div>
+
+          <div class="col-12">
+            <label for="msg" class="form-label">Message</label>
+            <textarea id="msg" name="message" rows="5" class="form-control" placeholder="When, how many people, and any questions…"></textarea>
+          </div>
+        </div>
+
+        <div class="d-flex align-items-center gap-3 mt-3">
+          <button type="submit" class="btn btn-accent"><i class="bi bi-send"></i> Send Message</button>
+          <div id="formStatus" class="small text-success" role="status" aria-live="polite"></div>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <footer class="py-3 border-top border-secondary">
+    <div class="container d-flex flex-wrap align-items-center justify-content-between">
+      <p class="mb-0 text-secondaryn justify-content-center">© <span id="year"></span> brotravels.af • Bold. Respectful. Real.</p>
+      <a class="btn btn-outline-light btn-sm" href="#intro"><i class="bi bi-arrow-up"></i> Back to top</a>
+    </div>
+  </footer>
+
+  <!-- jQuery + Bootstrap JS (CDN) -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script src="app.js"></script>
+</body>
+</html>
