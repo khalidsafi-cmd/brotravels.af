@@ -36,6 +36,14 @@
       color: var(--bro-light) !important;
     }
 
+    /* toggle menu styles */
+    .toggle-menu {
+      background-color: var(--dark-bg) !important;
+      color: var(--dark-text);
+      padding: 1rem;
+      font-size: 1.2rem;
+    }
+
     /* Accent button */
     .btn-accent {
       background: var(--secondary);
