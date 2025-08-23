@@ -41,7 +41,12 @@
       background-color: var(--dark-bg) !important;
       color: var(--dark-text);
       padding: 1rem;
+      font-size: 1rem;  
+    }
+
+    .navbar-brand{
       font-size: 1.2rem;
+      font-weight: 800;
     }
 
     /* Accent button */
