@@ -48,7 +48,7 @@ $('.more-btn').on('click', function () {
   c.toggle();
 });
 
-/* ========= Contact form: Bootstrap validation + fake submit ========= */
+/* ========= Contact form: Bootstrap validation + REAL submit to Web3Forms ========= */
 (() => {
   const form = document.getElementById('contactForm');
   const status = document.getElementById('formStatus');
@@ -58,25 +58,52 @@ $('.more-btn').on('click', function () {
     btn.addEventListener('click', () => {
       const sel = document.getElementById('pkg');
       const wanted = btn.dataset.package;
+      if (!sel) return;
       [...sel.options].forEach(o => {
         if (o.textContent.includes(wanted)) sel.value = o.value || o.textContent;
       });
     });
   });
 
-  form.addEventListener('submit', (e) => {
+  form.addEventListener('submit', async (e) => {
     e.preventDefault();
+
+    // Bootstrap validation
     if (!form.checkValidity()) {
       e.stopPropagation();
       form.classList.add('was-validated');
       return;
     }
+
     status.textContent = 'Sending…';
-    setTimeout(() => {
-      status.textContent = 'Thanks! We’ll email you shortly with next steps.';
-      form.reset();
-      form.classList.remove('was-validated');
-    }, 600);
+
+    try {
+      // Build payload exactly as Web3Forms expects (multipart/form-data)
+      const data = new FormData(form);
+
+      // Optional but recommended extras:
+      // data.append('subject', 'New Inquiry — BroTravels AFG');
+      // data.append('from_name', 'BroTravels AFG Website');
+
+      const res = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        body: data,
+        headers: { 'Accept': 'application/json' }
+      });
+
+      const result = await res.json();
+
+      if (res.ok) {
+        status.textContent = 'Thanks! We’ll email you shortly with next steps.';
+        form.reset();
+        form.classList.remove('was-validated');
+      } else {
+        // Web3Forms returns a helpful message when something’s misconfigured
+        status.textContent = result.message || 'Submission failed. Please try again.';
+      }
+    } catch (err) {
+      status.textContent = 'Network error. Please try again.';
+    }
   });
 })();
 
