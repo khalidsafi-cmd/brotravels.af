@@ -4,6 +4,8 @@ $(window).on('load', function () {
     $('#preloader').addClass('hidden');
     // Remove after transition for better perf
     setTimeout(() => $('#preloader').remove(), 400);
+    // Show WhatsApp icon after preloader
+    $('.whatsapp-float').removeClass('preloader-hidden');
   }, 400);
 });
 
