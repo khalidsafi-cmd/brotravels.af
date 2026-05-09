@@ -1,0 +1,12 @@
+.git
+.gitignore
+README.md
+Dockerfile
+.dockerignore
+.github/
+terraform/
+*.md
+node_modules/
+.env
+api/node_modules/
+*.log

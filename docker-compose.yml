@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  web:
+    build: .
+    ports:
+      - "8080:80"
+    volumes:
+      - .:/usr/share/nginx/html:ro
+    environment:
+      - NGINX_PORT=80
+    restart: unless-stopped
+
+  # Optional: Add a simple API endpoint using Node.js
+  api:
+    image: node:18-alpine
+    working_dir: /app
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./api:/app:ro
+    command: sh -c "npm install && npm start"
+    environment:
+      - NODE_ENV=development
+    depends_on:
+      - web

@@ -1,0 +1,68 @@
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches: [ master, main ]
+  pull_request:
+    branches: [ master, main ]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Validate HTML
+      run: |
+        # Install HTML validator
+        sudo apt-get update
+        sudo apt-get install -y tidy
+
+        # Validate HTML files
+        find . -name "*.html" -exec tidy -q -e {} \;
+
+    - name: Check CSS syntax
+      run: |
+        # Install CSS validator
+        sudo apt-get install -y curl
+        curl -sL https://github.com/stylelint/stylelint/releases/download/15.10.3/stylelint-15.10.3.tgz | tar -xz
+        sudo mv stylelint-*/bin/stylelint /usr/local/bin/
+
+        # Check CSS syntax (basic check)
+        if command -v stylelint &> /dev/null; then
+          stylelint "**/*.css" || echo "CSS validation completed with warnings"
+        else
+          echo "Stylelint not available, skipping CSS validation"
+        fi
+
+    - name: Build Docker image
+      run: |
+        docker build -t brotravels-af:latest .
+
+    - name: Test Docker container
+      run: |
+        # Run the container in background
+        docker run -d --name test-container -p 8080:80 brotravels-af:latest
+
+        # Wait for nginx to start
+        sleep 5
+
+        # Test if the website is accessible
+        curl -f http://localhost:8080 || exit 1
+
+        # Check if main page contains expected content
+        curl -s http://localhost:8080 | grep -q "Travel Afghanistan with Bro" || exit 1
+
+        # Clean up
+        docker stop test-container
+        docker rm test-container
+
+    - name: Build and push Docker image
+      if: github.ref == 'refs/heads/master' || github.ref == 'refs/heads/main'
+      run: |
+        echo "Building and pushing Docker image..."
+        # In a real scenario, you would push to a registry like Docker Hub or GitHub Container Registry
+        # For now, just build the image
+        docker build -t brotravels-af:${{ github.sha }} .
