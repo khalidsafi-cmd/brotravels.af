@@ -22,7 +22,7 @@ COPY --from=api-builder /app /app
 COPY . /usr/share/nginx/html
 
 # Copy custom nginx configuration
-COPY nginx.conf /etc/nginx/nginx.conf
+COPY nginx.conf /etc/nginx/conf.d/default.conf
 
 # Create a startup script
 RUN echo '#!/bin/sh' > /start.sh && \
